@@ -81,7 +81,7 @@ cp .env.local.example .env.local
 
 Edit `.env.local`:
 ```env
-next_public_server_url=http://localhost:5000
+NEXT_PUBLIC_SERVER_URL=http://localhost:5000
 ```
 
 Start the frontend:
@@ -209,6 +209,6 @@ Health check endpoint. Returns `{ "status": "ok" }`.
 3. Deploy the `server/` folder
 
 ### Frontend (e.g. Vercel)
-1. Set `next_public_server_url` to your deployed backend URL
+1. Set `NEXT_PUBLIC_SERVER_URL` to your deployed backend URL
 2. Deploy the `client/` folder
 3. Configure Vercel to run `npm run build` in the `client/` directory

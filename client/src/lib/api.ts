@@ -1,5 +1,5 @@
 const SERVER_URL =
-  process.env.next_public_server_url || "http://localhost:5000";
+  process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:5000";
 
 export interface TokenResponse {
   token: string;
