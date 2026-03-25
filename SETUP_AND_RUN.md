@@ -80,7 +80,7 @@ cp .env.local.example .env.local
 Open `client/.env.local` — it should already have the right value:
 
 ```env
-NEXT_PUBLIC_SERVER_URL=http://localhost:5000
+next_public_server_url=http://localhost:5000
 ```
 
 ```bash
@@ -178,7 +178,7 @@ npm start        # serves the production build on port 3000
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `NEXT_PUBLIC_SERVER_URL` | ✅ | URL of your backend server (default: http://localhost:5000) |
+| `next_public_server_url` | ✅ | URL of your backend server (default: http://localhost:5000) |
 
 ---
 
@@ -200,7 +200,7 @@ npm start        # serves the production build on port 3000
 → Close any other app using your camera (Zoom, Teams, FaceTime, etc.) and try again.
 
 ### Port 5000 already in use
-→ Change `PORT=5001` in `server/.env` and update `NEXT_PUBLIC_SERVER_URL=http://localhost:5001` in `client/.env.local`.
+→ Change `PORT=5001` in `server/.env` and update `next_public_server_url=http://localhost:5001` in `client/.env.local`.
 
 ### Port 3000 already in use
 → Next.js will automatically try port 3001, 3002, etc. Watch the terminal output for the actual URL.
@@ -272,6 +272,6 @@ twilio-video-app/
 ### Frontend → Vercel
 1. Connect your repo to Vercel
 2. Set **Root Directory** to `client`
-3. Add env var: `NEXT_PUBLIC_SERVER_URL=https://your-backend.railway.app`
+3. Add env var: `next_public_server_url=https://your-backend.railway.app`
 4. Deploy — Vercel auto-detects Next.js
 
