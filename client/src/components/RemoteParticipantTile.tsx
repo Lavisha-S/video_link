@@ -29,10 +29,9 @@ export default function RemoteParticipantTile({ participant }: Props) {
     };
 
     const detachTrack = (track: RemoteTrack) => {
-     // track.detach();
-       if ("detach" in track) {
-    (track as any).detach();
-  }
+    // track.detach();
+       
+
 
       if (track.kind === 'video') setHasVideo(false);
     };
